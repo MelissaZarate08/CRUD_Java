@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="523.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lyzsolar.ajalcafe.controllers.ObservarGastosController">
+    <children>
+        <AnchorPane layoutY="-2.0" prefHeight="122.0" prefWidth="160.0" style="-fx-background-color: #41B8D5; -fx-border-color: #2B2B2B;" />
+        <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="28.0" layoutY="14.0">
+            <image>
+                <Image url="@images/logo.png" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutX="160.0" layoutY="-1.0" prefHeight="122.0" prefWidth="482.0" style="-fx-border-color: #8F8E8E;">
+            <children>
+                <Text fill="#0097b2" layoutX="66.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¡Observar Gastos !">
+                    <font>
+                        <Font name="Century Gothic" size="36.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <Text fill="#6b6969" layoutX="219.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gastos realizados por compra de insumos">
+            <font>
+                <Font name="Century Gothic" size="16.0" />
+            </font>
+        </Text>
+        <TableView fx:id="tableVerProductos" layoutX="1.0" layoutY="169.0" prefHeight="222.0" prefWidth="649.0">
+            <columns>
+                <TableColumn fx:id="idDataTable" prefWidth="74.0" text="        ID &#10;PRODUCTO" />
+                <TableColumn fx:id="nombreDataTable" prefWidth="124.66665649414062" text="NOMBRE" />
+                <TableColumn fx:id="cantidadDataTable" prefWidth="124.6666259765625" text="CANTIDAD" />
+                <TableColumn fx:id="precioDataTable" minWidth="0.0" prefWidth="132.0" text="   PRECIO &#10;UNITARIO" />
+                <TableColumn fx:id="fechacompraDataTable" prefWidth="192.0" text="  FECHA&#10;      DE&#10;COMPRA&#10;" />
+            </columns>
+        </TableView>
+        <TextField alignment="CENTER" layoutY="119.0" prefHeight="33.0" prefWidth="160.0" style="-fx-background-color: #41b8d5; -fx-border-color: #74371d;" text="Gastos">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <Button fx:id="regresarButton" layoutX="90.0" layoutY="465.0" mnemonicParsing="false" onMouseClicked="#OnMouseClickedRegresarButton" prefHeight="30.0" prefWidth="101.0" style="-fx-background-color: #0097B2;" text="Regresar" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic" size="14.0" />
+            </font></Button>
+        <ImageView fx:id="regresarIcono" fitHeight="40.0" fitWidth="40.0" layoutX="121.0" layoutY="420.0" onMouseClicked="#OnMouseClickedRegresarIcono">
+            <image>
+                <Image url="@images/regreso.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

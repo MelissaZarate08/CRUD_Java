@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="523.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lyzsolar.ajalcafe.controllers.verProductoController">
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="122.0" prefWidth="160.0" style="-fx-background-color: #41B8D5; -fx-border-color: #2B2B2B;" />
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="28.0" layoutY="14.0">
+         <image>
+            <Image url="@images/logo.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="160.0" layoutY="-1.0" prefHeight="122.0" prefWidth="482.0" style="-fx-border-color: #8F8E8E;">
+         <children>
+            <Text fill="#0097b2" layoutX="103.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¡Ver Productos!">
+               <font>
+                  <Font name="Century Gothic" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Text fill="#6b6969" layoutX="248.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Productos existentes en el inventario">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableVerProductos" layoutX="2.0" layoutY="162.0" prefHeight="222.0" prefWidth="644.0">
+        <columns>
+          <TableColumn fx:id="idDataTable" prefWidth="47.333343505859375" text="ID" />
+          <TableColumn fx:id="nombreDataTable" prefWidth="112.33334350585938" text="NOMBRE" />
+            <TableColumn fx:id="categoriaDataTable" prefWidth="96.66665649414062" text="CATEGORIA" />
+            <TableColumn fx:id="caducidadDataTable" prefWidth="86.33331298828125" text="CADUCIDAD" />
+            <TableColumn fx:id="cantidadDataTable" prefWidth="72.0" text="CANTIDAD" />
+            <TableColumn fx:id="unidadDataTable" minWidth="3.6666259765625" prefWidth="70.3333740234375" text="UNIDAD" />
+            <TableColumn fx:id="precioDataTable" minWidth="0.0" prefWidth="85.66668701171875" text="PRECIO" />
+            <TableColumn fx:id="fechacompraDataTable" prefWidth="76.33331298828125" text="  FECHA&#10;COMPRA&#10;" />
+        </columns>
+      </TableView>
+      <TextField alignment="CENTER" layoutY="119.0" prefHeight="33.0" prefWidth="160.0" style="-fx-background-color: #41b8d5; -fx-border-color: #74371d;" text="Producto">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="regresarButton" layoutX="90.0" layoutY="465.0" mnemonicParsing="false" onMouseClicked="#OnMouseClickedRegresarButton" prefHeight="30.0" prefWidth="101.0" style="-fx-background-color: #0097B2;" text="Regresar" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font></Button>
+      <ImageView fx:id="regresarIcono" fitHeight="40.0" fitWidth="40.0" layoutX="121.0" layoutY="420.0" onMouseClicked="#OnMouseClickedRegresarIcono">
+         <image>
+            <Image url="@images/regreso.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="480.0" prefWidth="640.0" style="-fx-border-color: #B8B9BB; -fx-border-radius: 5; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lyzsolar.ajalcafe.controllers.eliminarPedidoController">
+   <children>
+      <AnchorPane prefHeight="505.0" prefWidth="160.0" style="-fx-background-color: #41B8D5; -fx-border-color: #2B2B2B;">
+         <children>
+            <TextField alignment="CENTER" layoutX="2.0" layoutY="122.0" prefHeight="10.0" prefWidth="156.0" style="-fx-background-color: #41b8d5; -fx-border-color: #74371d;" text="Pedido">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="28.0" layoutY="14.0">
+               <image>
+                  <Image url="@images/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="122.0" fitWidth="122.0" layoutX="19.0" layoutY="174.0">
+               <image>
+                  <Image url="@images/suprPedido.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="159.0" prefHeight="122.0" prefWidth="482.0" style="-fx-border-color: #8F8E8E;">
+         <children>
+            <Text fill="#0097b2" layoutX="91.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¡ Eliminar Pedido !" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="eliminarIcono" fitHeight="50.0" fitWidth="50.0" layoutX="235.0" layoutY="314.0" onMouseClicked="#OnMouseclickedEliminarIcono">
+         <image>
+            <Image url="@images/eliminar.png" />
+         </image>
+      </ImageView>
+      <Text fill="#6b6969" layoutX="239.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrese  Id del Pedido que desea eliminar" textAlignment="CENTER">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Idtext" alignment="CENTER" layoutX="251.0" layoutY="225.0" prefHeight="30.0" prefWidth="309.0" promptText="ID">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow color="#1aa4c7" />
+         </effect>
+      </TextField>
+      <Button fx:id="eliminarButton" alignment="CENTER" layoutX="210.0" layoutY="398.0" mnemonicParsing="false" onMouseClicked="#OnMouseclickedEliminarButton" prefHeight="30.0" prefWidth="101.0" style="-fx-background-color: #0097b2;" text="Eliminar" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="BuscarButton" alignment="CENTER" layoutX="360.0" layoutY="398.0" mnemonicParsing="false" onMouseClicked="#OnMouseclickedBuscarButton" prefHeight="30.0" prefWidth="101.0" style="-fx-background-color: #0097b2;" text="Buscar" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="regresarButton" alignment="CENTER" layoutX="500.0" layoutY="398.0" mnemonicParsing="false" onMouseClicked="#OnMouseclickedRegresarButton" prefHeight="30.0" prefWidth="101.0" style="-fx-background-color: #0097b2;" text="Regresar" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="regresarIcono" fitHeight="50.0" fitWidth="50.0" layoutX="526.0" layoutY="314.0" onMouseClicked="#OnMouseclickedRegresarIcono">
+         <image>
+            <Image url="@images/regreso.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="buscarIcono" fitHeight="50.0" fitWidth="50.0" layoutX="387.0" layoutY="314.0" onMouseClicked="#OnMouseclickedBuscarIcono">
+         <image>
+            <Image url="@images/Buscar.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
